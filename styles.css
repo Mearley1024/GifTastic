@@ -36,9 +36,9 @@ body {
     padding: 5px 20px;
     margin: 0 10px 10px 0;
     font-size: 18px;
-    color: rgb(103, 16, 153);
+    color: rgb(248, 237, 134);
     cursor: pointer;
-    background: #0e642b;
+    background: #f34f0e;
     border: 0;
     border-radius: 5px;
     box-shadow: 2px 2px 3px #bbb;
@@ -46,7 +46,7 @@ body {
   
   button:hover,
   input[type="submit"]:hover {
-    background: #480fe6;
+    background: #ace60f;
   }
   
   button.active {

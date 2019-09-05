@@ -1,10 +1,13 @@
 $(document).ready(function() {
 
     var food = [
-      "ramen noodles", "pho", "pizza", "salad", "rolls", "cake",
-      "eggs", "cheese", "bread", "curry", "tacos",
-      "french fries", "sandwich", "vegetables", "carne asada", "rice",
-      "pasta", "smoothies", "chicken", "salmon", "chocolate"
+      
+     "pizza", "salad", "rolls",
+      "cake",  "eggs", "cheese", "bread",
+     "tacos", "french fries",
+      "pasta", "smoothies",
+      "chicken", "fish",
+      
     ];
   
     // function to make buttons and add to page
@@ -27,7 +30,8 @@ $(document).ready(function() {
       $(this).addClass("active");
   
       var type = $(this).attr("data-type");      
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=C8aX5zuF2OaYrn0UnQf80K0fFPbiBqEQ";
+      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=" + apiKey+"C8aX5zuF2OaYrn0UnQf80K0fFPbiBqEQ";
+      
 
       $.ajax({
         url: queryURL,
